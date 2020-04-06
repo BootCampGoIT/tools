@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Homework 10</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.3/dist/basicLightbox.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
-  <a href="#" class="cart" data-link="cart">Cart</a>
   <ul class="cartList"></ul>
 
   <div class="toolbar">
+    <div><a href="#" class="cart" data-link="cart">Cart</a></div>
+    <div> <span class="cartLength"> Количество товаров в корзине: 0 шт.</span></div>
+
     <div class="theme-switch">
       <svg aria-hidden="true" data-prefix="fas" data-icon="sun" role="img" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512" class="theme-switch__icon">
@@ -37,7 +40,10 @@
     </div>
   </div>
 
-  <ul class="menu" id="menu"></ul>
+  <ul class="menu" id="menu">
+
+  </ul>
+  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.3/dist/basicLightbox.min.js"></script>
 </body>
 
 </html>
