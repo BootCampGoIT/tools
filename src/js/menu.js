@@ -82,6 +82,7 @@ function add(id) {
 }
 
 document.querySelector('.cart').addEventListener('click', (e) => {
+  const fragment = document.createDocumentFragment();
   const instance = basicLightbox.create(`
     <div class="cartModal">
     <ul class="cartList">
@@ -92,7 +93,6 @@ document.querySelector('.cart').addEventListener('click', (e) => {
     <p>Цена за единицу: ${dish.item.price} кредитов</p>
     <p>Всего: ${dish.quantity * dish.item.price} кредитов</p>
   `
-
   })}
   </ul>
   <h2 class="modalTotalPrice">Общая сумма заказа: ${dishesInCart.reduce((acc, dish) => {
